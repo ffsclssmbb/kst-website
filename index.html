@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <title>KS TelecomServ</title>
+  <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<!-- hero & header section -->  
+  <section class="heroSection">
+    <header id="mainHeader">
+      <div class="logo"><i class="fa-brands fa-digital-ocean"></i> KS TelecomServ</div>
+      <nav id="nav">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Pages</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact Us</a>
+        <button class="commonBtn">Get Started</button>
+      </nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div class="hero-text" data-aos="fade-right">
+        <h1>Your Innovative Telecom Solutions</h1>
+        <p>KS TelecomServ provides cutting-edge telecommunication services to businesses and individuals, ensuring reliable
+        connectivity and communication.</p>
+        <div class="hero-buttons">
+          <button class="commonBtn">Contact Us Now</button>
+          <button class="play-btn"><i class="fa-solid fa-play"></i> Play Video</button>
+        </div>
+      </div>
+      <div class="hero-image" data-aos="fade-left">
+        <div class="shape"></div>
+      	<img src="images/f1.png" class="heroIcon1">
+      	<img src="images/f2.png" class="heroIcon2">
+      	<img src="images/f3.png" class="heroIcon3">
+      	<img src="images/f4.png" class="heroIcon4">
+        <img src="images/user.png" class="userImage">
+      </div>
+    </div>
+  </section>
+<!-- about section -->
+ <section class="container" id="/About">
+    <div class="image-box" data-aos="zoom-in">
+      <div class="purple-corner"></div>
+      <img src="images/about-banner.jpg">
+    </div>
+    <div class="text-box" data-aos="fade-right">
+      <small>KS TelecomServ</small>
+      <h1 class="heading">We Are The Best<br>ICT Solution Partner</h1>
+      <span class="highlight">Our Story</span>
+      <p>Founded in 2025, KS TelecomServ has been at the forefront of the telecommunications industry, providing innovative
+      solutions to businesses and individuals.</p>
+      <p>Starting as a small team of telecommunication enthusiasts, we have grown into a leading provider of comprehensive
+      telecom services, serving clients across the country.</p>
+      <p>Our journey has been marked by a commitment to excellence, technological advancement, and customer satisfaction. Today,
+      we continue to push the boundaries of what's possible in the telecommunications field.</p>
+      <button class="commonBtn">READ MORE</button>
+    </div>
+  </section>
+
+<!--service section -->
+<section class="services-section">
+    <div class="container">
+      <div class="services-left" data-aos="fade-left">
+        <small>SERVICES</small>
+        <h1 class="heading">Provide Awesome<br />Services</h1>
+        <p>
+          We offer a comprehensive range of telecommunication services to meet diverse needs and requirements.
+        </p>
+        <ul class="services-list" >
+          <li><span class="check purple"><i class="fa-solid fa-check"></i></span> Business Consulting</li>
+          <li><span class="check orange"><i class="fa-solid fa-check"></i></span> Business Process</li>
+          <li><span class="check green"><i class="fa-solid fa-check"></i></span> Project Management</li>
+          <li><span class="check purple"><i class="fa-solid fa-check"></i></span> CCTV & Alarm System</li>
+          <li><span class="check orange"><i class="fa-solid fa-check"></i></span> General Virtual Assistance</li>
+          <li><span class="check green"><i class="fa-solid fa-check"></i></span> Engineering Services</li>
+        </ul>
+        <button class="commonBtn">View All Services</button>
+      </div>
+
+      <div class="services-right" data-aos="fade-right">
+        <div class="left-column">
+          <div class="card purple-card">
+            <div class="icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Web Design</h3>
+            <p>Donec interdum hendrerit est, eu vehicula orci maximus vel. Suspendisse potenti.</p>
+          </div>
+          <div class="card green-card">
+            <div class="icon"><i class="fa-regular fa-lightbulb"></i></div>
+            <h3>Idea & Research</h3>
+            <p>Donec interdum hendrerit est, eu vehicula orci maximus vel. Suspendisse potenti.</p>
+          </div>
+        </div>
+        <div class="center-column">
+          <div class="card yellow-card">
+            <div class="icon"><i class="fa-solid fa-chart-simple"></i></div>
+            <h3>SEO & Marketing</h3>
+            <p>Donec interdum hendrerit est, eu vehicula orci maximus vel. Suspendisse potenti.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- watch section -->
+<section class="watchSection">
+   <small data-aos="zoom-in">WATCH US</small>
+  <div class="heading" data-aos="zoom-in">See How We Work</div>
+  <div class="video-container" data-aos="zoom-in">
+    <video id="workVideo" poster="images/videoThumb.jpg" width="100%" controls style="display: none">
+      <source src="video/video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <img src="images/videoThumb.jpg" alt="Work Process" id="videoThumbnail" />
+    <div class="play-button" id="playBtn"><i class="fa-solid fa-play"></i></div>
+  </div>
+
+  <div class="stats" data-aos="fade-right">
+    <div class="stat">
+      <div class="stat-number" data-target="874">0</div>
+      <div class="stat-label">Happy Clients</div>
+      <div class="progress-bar"><span class="orange"></span></div>
+    </div>
+    <div class="stat">
+      <div class="stat-number" data-target="748">0</div>
+      <div class="stat-label">Projects Done</div>
+      <div class="progress-bar"><span class="blue"></span></div>
+    </div>
+    <div class="stat">
+      <div class="stat-number" data-target="369">0</div>
+      <div class="stat-label">Cup Of Coffee</div>
+      <div class="progress-bar"><span class="teal"></span></div>
+    </div>
+    <div class="stat">
+      <div class="stat-number" data-target="584">0</div>
+      <div class="stat-label">Skill Services</div>
+      <div class="progress-bar"><span class="purple"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- price section -->
+<section class="priceSection">
+  <small data-aos="zoom-in">OUR PRICING</small>
+  <div class="heading" data-aos="zoom-in">Choose Price Plan</div>
+
+  <div class="container">
+    <div class="pricing-card" data-aos="fade-right">
+      <div class="plan-title">Individual</div>
+      <div class="plan-description">Pellentesque a nibh sed nisl ullamcorper pulvinar.</div>
+      <ul class="plan-features">
+        <li>Graphic Design</li>
+        <li>Web Design</li>
+        <li>UI/UX</li>
+        <li>HTML/CSS</li>
+        <li>SEO Marketing</li>
+      </ul>
+      <div class="price">$15<span style="font-size: 0.5em; font-weight: normal;">/Month</span></div>
+      <a href="#" class="join-btn">JOIN NOW</a>
+    </div>
+
+    <div class="pricing-card featured" data-aos="fade-down">
+      <div class="plan-title">Company</div>
+      <div class="plan-description">Pellentesque a nibh sed nisl ullamcorper pulvinar.</div>
+      <ul class="plan-features">
+        <li>Graphic Design</li>
+        <li>Web Design</li>
+        <li>UI/UX</li>
+        <li>HTML/CSS</li>
+        <li>SEO Marketing</li>
+      </ul>
+      <div class="price">$25<span style="font-size: 0.5em; font-weight: normal;">/Month</span></div>
+      <a href="#" class="join-btn">JOIN NOW</a>
+    </div>
+
+    <div class="pricing-card" data-aos="fade-left">
+      <div class="plan-title">Enterprise</div>
+      <div class="plan-description">Pellentesque a nibh sed nisl ullamcorper pulvinar.</div>
+      <ul class="plan-features">
+        <li>Graphic Design</li>
+        <li>Web Design</li>
+        <li>UI/UX</li>
+        <li>HTML/CSS</li>
+        <li>SEO Marketing</li>
+      </ul>
+      <div class="price">$35<span style="font-size: 0.5em; font-weight: normal;">/Month</span></div>
+      <a href="#" class="join-btn">JOIN NOW</a>
+    </div>
+  </div>
+</section>
+<!-- testimonial -->
+<section class="testimonial">
+   <div class="testimonial-section">
+    <small data-aos="zoom-in">TESTIMONIAL</small>
+    <div class="heading" data-aos="zoom-in">What Client Say's</div>
+
+    <div class="testimonial-wrapper" data-aos="fade-right">
+      <div class="testimonial-box">
+        <div class="testimonial-text" id="testimonialText"></div>
+        <div class="testimonial-author" id="testimonialAuthor"></div>
+        <div class="testimonial-role" id="testimonialRole"></div>
+      </div>
+      <div id="avatarLayer"></div>
+    </div>
+
+    <div class="dots" id="testimonialDots"></div>
+  </div>
+</section>
+<!-- portfolio -->
+<section class="portfolioSection">
+  <small data-aos="zoom-in">PROJECTS</small>
+  <div class="heading" data-aos="zoom-in">Our Work Portfolio</div>
+
+  <div class="portfolio-container" data-aos="fade-right">
+    <div class="portfolio-item">
+      <img src="images/project-1.jpg" >
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Analytics Dashboard</h3>
+          <p>Clean data visualization and performance tracking UI components.</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="images/project-2.jpg" >
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Product Packaging</h3>
+          <p>Creative packaging designs for healthy drinks and beverages.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="images/project-3.jpg" >
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Web Design</h3>
+          <p>Modern and user-centric website layouts for digital services.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="images/project-4.jpg" >
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Mobile App</h3>
+          <p>Interactive and intuitive mobile app UI for book reading.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="images/project-5.jpg" >
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Mobile App</h3>
+          <p>Interactive and intuitive mobile app UI for book reading.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="images/project-6.jpg" >
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Mobile App</h3>
+          <p>Interactive and intuitive mobile app UI for book reading.</p>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
+
+<!-- contact -->
+<section class="contactSection">
+  <div class="container">
+    <!-- Form Section -->
+    <div class="form-section" data-aos="fade-right">
+      <div class="form-row">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+      </div>
+      <div class="form-row">
+        <input type="email" placeholder="Email Address">
+        <input type="tel" placeholder="Phone No.">
+      </div>
+      <textarea rows="4" placeholder="Message..."></textarea>
+      <button class="commonBtn" style="width: 150px;">SUBMIT NOW</button>
+    </div>
+
+    <!-- Info Section -->
+    <div class="info-section" data-aos="fade-left">
+      <small>GET IN TOUCH</small>
+      <h1 class="heading">Get Free Support<br>Analysis</h1>
+      <p>Call us for fast support to this number.</p>
+      <div class="phone">09 20105 1999</div>
+    </div>
+  </div>
+</section>
+
+<button id="backToTop">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+<!-- footer --->
+  <footer>
+    <!-- Newsletter Section -->
+    <div class="newsletter">
+      <h2>Subscribe To Our Newsletter</h2>
+      <p>For Latest Update</p>
+      <div class="form-container">
+        <input type="email" placeholder="Email Address...">
+        <button class="commonBtn">SUBSCRIBE NOW</button>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <!-- Logo -->
+      <div class="footer-logo">
+         <i class="fa-brands fa-digital-ocean"></i> KS TelecomServ
+      </div>
+
+      <!-- Links -->
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Pages</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      Copyright © 2025 <a href="#" style="color:#5c59ff;text-decoration:none;">KS TelecomServ</a>. All rights reserved.
+    </div>
+  </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/testimonials.js"></script>
+</body>
+
+</html>
