@@ -49,3 +49,6 @@ window.onscroll = () => {
 document.getElementById("backToTop")?.addEventListener("click", () =>
   window.scrollTo({ top: 0, behavior: "smooth" })
 );
+
+document.getElementById("contactForm")?.addEventListener("click", e => {
+});

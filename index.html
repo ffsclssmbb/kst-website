@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!--icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,15 +21,14 @@
   <section class="heroSection">
     <header id="mainHeader">
       <div class="logo"><a href="#">
-        <img src="images/favicon-32x32.png" alt=" KS TelecomServ" class="logoImage"><a class="logoImage"> KS TelecomServ</a>
+        <img src="images/favicon-32x32.png" alt=" KS TelecomServ" class="logoImage"><a class="logoImage2"> KS TelecomServ</a>
       </a></div>
       <nav id="nav">
         <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Services</a>
-        <a href="#">Pages</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact Us</a>
+        <a href="#aboutSection">About Us</a>
+        <a href="#servicesSection">Services</a>
+        <a href="#portfolioSection">Portfolio</a>
+        <a href="#contactSection">Contact Us</a>
         <button class="commonBtn">Get Started</button>
       </nav>
       <div class="hamburger" onclick="toggleMenu()">
@@ -42,8 +44,7 @@
         <p>KS TelecomServ provides cutting-edge telecommunication services to businesses and individuals, ensuring reliable
         connectivity and communication.</p>
         <div class="hero-buttons">
-          <button class="commonBtn">Contact Us Now</button>
-          <button class="play-btn"><i class="fa-solid fa-play"></i> Play Video</button>
+          <button onclick="document.location=''" class="commonBtn">Contact Us Now</button>
         </div>
       </div>
       <div class="hero-image" data-aos="fade-left">
@@ -57,7 +58,7 @@
     </div>
   </section>
 <!-- about section -->
- <section class="container">
+ <section class="container" id="aboutSection">
     <div class="image-box" data-aos="zoom-in">
       <div class="purple-corner"></div>
       <img src="images/about-banner.jpg">
@@ -66,18 +67,29 @@
       <small>OUR STORY</small>
       <h1 class="heading">We Are The Best<br>ICT Solution Partner</h1>
       <span class="highlight">KS TelecomServ</span>
-      <p>Founded in 2021, KS TelecomServ has been at the forefront of the telecommunications industry, providing innovative
-      solutions to businesses and individuals.</p>
-      <p>Starting as a small team of telecommunication enthusiasts, we have grown into a leading provider of comprehensive
-      telecom services, serving clients across the country.</p>
-      <p>Our journey has been marked by a commitment to excellence, technological advancement, and customer satisfaction. Today,
-      we continue to push the boundaries of what's possible in the telecommunications field.</p>
-      <button class="commonBtn">READ MORE</button>
+      <p>KS TelecomServ is a leading consulting and managed services firm based in the Philippines, known for its expertise in
+      providing comprehensive business solutions across various industries. The company has been founded since 2019 and
+      officially establish in 2025.</p>
+      <p>Established with a vision to transform businesses through strategic insights and innovative approaches, KS TelecomServ
+      has quickly become a trusted partner for companies seeking to optimize their operations and drive growth.. The company
+      provides end-to-end professionally managed services and crafted, skill-driven solution programs tailored to the needs of
+      businesses or individual clients. By focusing on consulting, project management, crash programs, and team provisioning,
+      KS TelecomServ leverages its expertise to address complex business challenges and deliver value-added solutions.</p>
+      <p>The company's primary aim is to collaborate with clients to ignite delivery flow and ensure compliance across projects,
+      enabling the achievement of defined business objectives. KS TelecomServ plays a pivotal role in guiding customers to
+      understand the value of proposed solutions, applying structured methodologies that align with project or organizational
+      needs. Whether working on an intricate project plan or providing products, support management and services uniquely
+      suited to a specific application or program, KS TelecomServ is dedicated to achieving measurable outcomes and fostering
+      client success.</p>
+      <p>By bringing together expert consultation and actionable execution, the company positions itself as a trusted partner in
+      driving operational excellence and supporting strategic initiatives within diverse industries of telecom, ICT, BPO,
+      technology, finance, e-commerce, IT and other global-managed corporations.
+      </p>
     </div>
   </section>
 
 <!--service section -->
-<section class="services-section">
+<section class="services-section" id="servicesSection">
     <div class="container">
       <div class="services-left" data-aos="fade-left">
         <small>SERVICES</small>
@@ -121,22 +133,22 @@
   </section>
 
 <!-- watch section -->
-<section class="watchSection">
+<section class="watchSection" id="watchSection">
    <small data-aos="zoom-in">WATCH US</small>
   <div class="heading" data-aos="zoom-in">See How We Work</div>
   <div class="video-container" data-aos="zoom-in">
-    <video id="workVideo" poster="images/videoThumb.jpg" width="100%" controls style="display: none">
+    <video id="workVideo" poster="images/videoThumb.png" width="100%" controls style="display: none">
       <source src="video/video.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
-    <img src="images/videoThumb.jpg" alt="Work Process" id="videoThumbnail" />
+    <img src="images/videoThumb.png" alt="Work Process" id="videoThumbnail" />
     <div class="play-button" id="playBtn"><i class="fa-solid fa-play"></i></div>
   </div>
 
   <div class="stats" data-aos="fade-right">
     <div class="stat">
       <div class="stat-number" data-target="874">0</div>
-      <div class="stat-label">Happy Clients</div>
+      <div class="stat-label">Satisfied Clients</div>
       <div class="progress-bar"><span class="orange"></span></div>
     </div>
     <div class="stat">
@@ -146,7 +158,7 @@
     </div>
     <div class="stat">
       <div class="stat-number" data-target="369">0</div>
-      <div class="stat-label">Cup Of Coffee</div>
+      <div class="stat-label">Outsource Projects</div>
       <div class="progress-bar"><span class="teal"></span></div>
     </div>
     <div class="stat">
@@ -158,56 +170,56 @@
 </section>
 
 <!-- price section -->
-<section class="priceSection">
+<section class="priceSection" id="priceSection">
   <small data-aos="zoom-in">OUR PRICING</small>
   <div class="heading" data-aos="zoom-in">Choose Price Plan</div>
 
   <div class="container">
     <div class="pricing-card" data-aos="fade-right">
-      <div class="plan-title">Individual</div>
-      <div class="plan-description">Pellentesque a nibh sed nisl ullamcorper pulvinar.</div>
+      <div class="plan-title">CCTV & Alarm System</div>
+      <div class="plan-description">Choose from flexible service packages designed to maintain and support your security systems.</div>
       <ul class="plan-features">
-        <li>Graphic Design</li>
-        <li>Web Design</li>
-        <li>UI/UX</li>
-        <li>HTML/CSS</li>
-        <li>SEO Marketing</li>
+        <li>Analog, IP, Smart</li>
+        <li>Intercom Servicing</li>
+        <li>Monitoring Servicing</li>
+        <li>Installation Servicing</li>
+        <li>Maintenance Servicing</li>
       </ul>
-      <div class="price">$15<span style="font-size: 0.5em; font-weight: normal;">/Month</span></div>
-      <a href="#" class="join-btn">JOIN NOW</a>
+      <div class="price"><span style="font-size: 0.5em; font-weight: normal;"></span></div>
+      <a href="#contactSection" class="join-btn">CONTACT US</a>
     </div>
 
     <div class="pricing-card featured" data-aos="fade-down">
-      <div class="plan-title">Company</div>
-      <div class="plan-description">Pellentesque a nibh sed nisl ullamcorper pulvinar.</div>
+      <div class="plan-title">Project Management</div>
+      <div class="plan-description">Project management is a process that allows us to plan, execute, track and complete projects.</div>
       <ul class="plan-features">
-        <li>Graphic Design</li>
-        <li>Web Design</li>
-        <li>UI/UX</li>
-        <li>HTML/CSS</li>
-        <li>SEO Marketing</li>
+        <li>Scope management</li>
+        <li>Cost management</li>
+        <li>Quality management</li>
+        <li>Resource management</li>
+        <li>Risk management</li>
       </ul>
-      <div class="price">$25<span style="font-size: 0.5em; font-weight: normal;">/Month</span></div>
-      <a href="#" class="join-btn">JOIN NOW</a>
+      <div class="price"><span style="font-size: 0.5em; font-weight: normal;"></span></div>
+      <a href="#contactSection" class="join-btn">CONTACT US</a>
     </div>
 
     <div class="pricing-card" data-aos="fade-left">
-      <div class="plan-title">Enterprise</div>
-      <div class="plan-description">Pellentesque a nibh sed nisl ullamcorper pulvinar.</div>
+      <div class="plan-title">Engineering Services</div>
+      <div class="plan-description">Expertise applied to design, develop, and maintain systems, structures, and technologies.</div>
       <ul class="plan-features">
-        <li>Graphic Design</li>
-        <li>Web Design</li>
-        <li>UI/UX</li>
-        <li>HTML/CSS</li>
-        <li>SEO Marketing</li>
+        <li>Consultation and Investigation</li>
+        <li>Design and Development</li>
+        <li>Construction Management</li>
+        <li>Analysis and Simulation</li>
+        <li>Manufacturing Support</li>
       </ul>
-      <div class="price">$35<span style="font-size: 0.5em; font-weight: normal;">/Month</span></div>
-      <a href="#" class="join-btn">JOIN NOW</a>
+      <div class="price"><span style="font-size: 0.5em; font-weight: normal;"></span></div>
+      <a href="#contactSection" class="join-btn">CONTACT US</a>
     </div>
   </div>
 </section>
 <!-- testimonial -->
-<section class="testimonial">
+<section class="testimonial" id="testimonialSection">
    <div class="testimonial-section">
     <small data-aos="zoom-in">TESTIMONIAL</small>
     <div class="heading" data-aos="zoom-in">What Client Say's</div>
@@ -225,7 +237,7 @@
   </div>
 </section>
 <!-- portfolio -->
-<section class="portfolioSection">
+<section class="portfolioSection" id="portfolioSection">
   <small data-aos="zoom-in">PROJECTS</small>
   <div class="heading" data-aos="zoom-in">Our Work Portfolio</div>
 
@@ -296,8 +308,8 @@
 </section>
 
 <!-- contact -->
-<section class="contactSection">
-  <div class="container">
+<section class="contactSection" id="contactSection">
+  <form class="container" action="mailto:someone@example.com" method="post" enctype="text/plain">
     <!-- Form Section -->
     <div class="form-section" data-aos="fade-right">
       <div class="form-row">
@@ -309,7 +321,7 @@
         <input type="tel" placeholder="Phone No.">
       </div>
       <textarea rows="4" placeholder="Message..."></textarea>
-      <button class="commonBtn" style="width: 150px;">SUBMIT NOW</button>
+      <button class="commonBtn">SUBMIT NOW</button>
     </div>
 
     <!-- Info Section -->
@@ -319,7 +331,7 @@
       <p>Call us for fast support to this number.</p>
       <div class="phone">09 68866 7466</div>
     </div>
-  </div>
+  </form>
 </section>
 
 <button id="backToTop">
@@ -328,14 +340,14 @@
 <!-- footer --->
   <footer>
     <!-- Newsletter Section -->
-    <div class="newsletter">
+    <form class="newsletter" action="mailto:someone@example.com" method="post" enctype="text/plain">
       <h2>Subscribe To Our Newsletter</h2>
       <p>For Latest Update</p>
       <div class="form-container">
         <input type="email" placeholder="Email Address...">
         <button class="commonBtn">SUBSCRIBE NOW</button>
       </div>
-    </div>
+    </form>
 
     <!-- Footer Bottom -->
     <div class="footer-bottom">
@@ -347,11 +359,10 @@
       <!-- Links -->
       <div class="footer-links">
         <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Services</a>
-        <a href="#">Pages</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact Us</a>
+        <a href="#aboutSection">About Us</a>
+        <a href="#servicesSection">Services</a>
+        <a href="#portfolioSection">Portfolio</a>
+        <a href="#contactSection">Contact Us</a>
       </div>
 
       <!-- Social Icons -->

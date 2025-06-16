@@ -583,3 +583,16 @@ footer {
   .form-container input,
   .form-container button {width: 100%;max-width: 350px;}
 }
+
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logoImage.logoImage2 {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-dark);
+}
